@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans&family=Outfit:wght@200;300;400;600&family=Poppins:wght@400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+}
+.header {
+    margin: 30px;
+}
+.middle {
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.text {
+    margin-top: 40px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.middle .text h2 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 35px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.middle .text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 50px;
+}
+.middle .text button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: var(--Violet);
+    max-width: 40%;
+    height: 7vh;
+    box-shadow: 5px 5px 15px 0.5px #3e3e3e;
+    border: 0.2px solid white;
+    border-radius: 30px;
+}
+.middle .text button:hover{
+    color: var(--SoftMagenta);
+}
+.social{
+    margin-top: 40px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.social a {
+    margin-left: 30px;
+    padding: 8px;
+    color: antiquewhite;
+    border: 1px solid white;
+    border-radius: 50%;
+    
+}
+
+
+
+
+
+
+.attribution { 
+    font-size: 20px; text-align: center; 
+    color: aliceblue;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
