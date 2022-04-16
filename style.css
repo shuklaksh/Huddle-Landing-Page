@@ -47,7 +47,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: var(--Violet);
-    max-width: 40%;
+    max-width: 15em;
     height: 7vh;
     box-shadow: 5px 5px 15px 0.5px #3e3e3e;
     border: 0.2px solid white;
@@ -83,4 +83,58 @@ body {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media  (max-width: 700px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: var(--Violet);
+    }
+    .header img{
+        width: 8em;
+    }
+    .middle{
+        flex-direction: column;
+        margin: 0;
+        margin-top: 65px;
+    }
+    .middle img {
+        width: 78%;
+        align-self: center;
+    }
+    .middle .text {
+        text-align: center;
+        max-width: 80%;
+    }
+    .middle .text h2{
+        font-size: 21px;
+        padding:  0 20px;
+        
+    }
+    .middle .text p {
+        margin-bottom: 1.5em;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .text button {
+        margin: 0;
+        padding: 0;
+        align-self: center;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    .social {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+    .social a {
+        margin-left: 15px;
+    }
+    .attribution {
+        white-space: nowrap;
+        font-size: 10px;
+    }
 }
